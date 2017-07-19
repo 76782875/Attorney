@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        >
+
+        <ImageView
+            android:id="@+id/make_fanhui"
+            android:layout_width="95px"
+            android:layout_height="88px"
+            android:src="@mipmap/wode_zuo"
+            android:padding="17px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:text="我的预约"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#333333"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#dddddd"/>
+
+    <RadioGroup
+        android:id="@+id/mytender_rg"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="已见面"
+            android:checked="false"
+            android:id="@+id/make_yimeet"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="未见面"
+            android:checked="false"
+            android:id="@+id/make_weimeet"/>
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="全部"
+            android:checked="false"
+            android:id="@+id/make_quanbu"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/make_fragment"/>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

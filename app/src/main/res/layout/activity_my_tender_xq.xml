@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        >
+        <ImageView
+            android:id="@+id/mytenderxq_fanhui"
+            android:layout_width="95px"
+            android:layout_height="88px"
+            android:src="@mipmap/wode_zuo"
+            android:padding="17px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:text="竞标详情"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#333333"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#dddddd"/>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="750px"
+                android:layout_height="100px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="68px"
+                    android:layout_height="68px"
+                    android:src="@mipmap/wode_denglu_logo"
+                    android:layout_marginLeft="20px"
+                    android:id="@+id/mytenderxq_user_touxiang"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20px">
+
+                    <TextView
+                        android:id="@+id/mytenderxq_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40px"
+                        android:text="用户姓名"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="15px"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40px"
+                        android:text="发布时间"
+                        android:gravity="center_vertical"
+                        android:id="@+id/mytenderxq_user_time"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="北京市-海淀区"
+            android:textSize="28px"
+            android:textColor="#39a7b6"
+            android:id="@+id/mytenderxq_user_diqu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="案件类型"
+            android:textSize="28px"
+            android:textColor="#39a7b6"
+            android:id="@+id/mytenderxq_user_leixing"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:text="问题内容:"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="20px"
+                android:id="@+id/mytenderxq_user_message"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#dddddd"
+                android:layout_marginTop="10px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户上传的附件:"
+                android:textSize="32px"
+                android:textColor="#39a7b6"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="24px"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginLeft="24px"
+                android:id="@+id/mytenderxq_user_recycle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#dddddd"
+                android:layout_marginTop="10px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="委托报价:"
+                android:textSize="32px"
+                android:textColor="#39a7b6"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="24px"
+                android:id="@+id/mytenderxq_user_baojia"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="委托保证金:"
+                android:textSize="32px"
+                android:textColor="#39a7b6"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="24px"
+                android:id="@+id/mytenderxq_user_baozhengjin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#dddddd"
+        android:layout_marginTop="24px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="750px"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:src="@mipmap/wode_denglu_logo"
+            android:layout_marginLeft="20px"
+            android:id="@+id/mytenderxq_lvshi_touxiang"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:text="律师姓名"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15px"
+                android:id="@+id/mytenderxq_lvshi_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:text="手机号"
+                android:gravity="center_vertical"
+                android:id="@+id/mytenderxq_lvshi_photo"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:text="问题内容:"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="20px"
+        android:id="@+id/mytenderxq_lvshi_message"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36px"
+        android:textColor="#39A7B6"
+        android:text="竞标成功"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:id="@+id/mytenderxq_lvshi_zhuangtai"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36px"
+        android:textColor="#F5750F"
+        android:text="竞标价格"
+        android:gravity="center"
+        android:layout_marginTop="10px"
+        android:id="@+id/mytenderxq_lvshi_price"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#dddddd"
+        android:layout_marginTop="30px"/>
+
+    <Button
+        android:id="@+id/mytenderxq_lvshi_lianxi"
+        android:visibility="gone"
+        android:layout_marginTop="30px"
+        android:layout_gravity="center_horizontal"
+        android:textSize="36px"
+        android:textColor="#ffffff"
+        android:layout_width="700px"
+        android:layout_height="70px"
+        android:text="联系客户"
+        android:background="@mipmap/wode_denglu_anniu"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

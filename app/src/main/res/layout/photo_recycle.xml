@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="160px">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_marginLeft="24px"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/wode_denglu_logo"
+        android:id="@+id/photo_touxiang"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14px"
+        android:layout_marginRight="24px"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户姓名:"
+            android:textSize="32px"
+            android:textColor="#303030"
+            android:id="@+id/photo_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码:"
+            android:textSize="28px"
+            android:textColor="#373737"
+            android:layout_marginTop="42px"
+            android:id="@+id/photo_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-8-8"
+            android:textSize="28px"
+            android:textColor="#303030"
+            android:layout_alignParentRight="true"
+            android:id="@+id/photo_time"/>
+
+        <Button
+            android:layout_width="160px"
+            android:layout_height="60px"
+            android:text="完成任务"
+            android:textSize="28px"
+            android:background="#39A7B6"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="42px"
+            android:id="@+id/photo_queren"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#E2E2E2"/>
+</com.zhy.autolayout.AutoLinearLayout>

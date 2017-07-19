@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        >
+        <ImageView
+            android:id="@+id/jingbiaoxiangqing_fanhui"
+            android:layout_width="95px"
+            android:layout_height="88px"
+            android:src="@mipmap/wode_zuo"
+            android:padding="17px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:text="竞标详情"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#333333"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#dddddd"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="750px"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:src="@mipmap/wode_denglu_logo"
+            android:layout_marginLeft="20px"
+            android:id="@+id/tender_xq_touxiang"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+
+                <TextView
+                    android:textSize="32px"
+                    android:textColor="#222222"
+                    android:id="@+id/tender_xq_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:text="用户姓名"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15px"/>
+
+
+
+
+            <TextView
+                android:textSize="28px"
+                android:textColor="#6F6F6F"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:text="发布时间"
+                android:gravity="center_vertical"
+                android:id="@+id/tender_xq_time"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:textSize="28px"
+        android:textColor="#6F6F6F"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:text="问题内容:"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="20px"
+        android:id="@+id/tender_xq_message"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="北京市-海淀区"
+            android:textSize="28px"
+            android:textColor="#39a7b6"
+            android:id="@+id/tender_xq_diqu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="案件类型"
+            android:textSize="28px"
+            android:textColor="#39a7b6"
+            android:id="@+id/tender_xq_leixing"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户上传的附件:"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="24px"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="24px"
+        android:id="@+id/tender_xq_recycle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="委托报价:"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="24px"
+        android:id="@+id/tender_xq_baojia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="委托保证金:"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="24px"
+        android:id="@+id/tender_xq_baozhengjin"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托竞标价格:"
+            android:textSize="32px"
+            android:textColor="#39a7b6"
+            android:layout_marginLeft="24px"
+            android:id="@+id/tender_xq_jingbiaojia"/>
+
+        <EditText
+            android:digits="0123456789."
+            android:layout_width="180px"
+            android:layout_height="50px"
+            android:background="@mipmap/yuanjiaojuxing2"
+            android:hint="请输入金额"
+            android:textSize="30px"
+            android:textColor="#999999"
+            android:layout_marginLeft="20px"
+            android:id="@+id/tender_xq_shuru"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="36px"
+            android:textColor="#999999"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#dddddd"
+        android:layout_marginTop="10px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@mipmap/wenbenyubg"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:padding="24px"
+        android:gravity="top"
+        android:hint="请输入您的投标方案"
+        android:id="@+id/tender_xq_fangan"/>
+
+    <TextView
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:textColor="#BEBEBE"
+        android:text="*案件委托,平台收取3成的服务费;"/>
+        <TextView
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:textSize="24px"
+            android:textColor="#BEBEBE"
+            android:text="*此报价只限于一阶段的服务费用;"/>
+        <TextView
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24px"
+            android:textColor="#BEBEBE"
+            android:text="*若当事人需要发票，应当出具与委托报价一致的金额发票（包含平台服务费），平台收取的服务费由律师向平台索要；律师与当事人签订委托协议后，律师费经用户确定后转入律师账户中。"/>
+        <Button
+            android:id="@+id/tender_xq_toubiao"
+            android:layout_width="700px"
+            android:layout_height="70px"
+            android:background="@mipmap/woyaotoubiao"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="80px"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

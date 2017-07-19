@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="95px"
+            android:layout_height="88px"
+            android:src="@mipmap/wode_zuo"
+            android:padding="17px"
+            android:id="@+id/jiangshishenqing_fanhui"/>
+
+        <TextView
+            android:layout_marginRight="95px"
+            android:layout_width="0px"
+            android:layout_height="88px"
+            android:layout_weight="1"
+            android:text="讲师申请"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#333333"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#dddddd"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:src="@mipmap/jiangshishenqing4"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="24px"
+        android:padding="24px"
+        android:text="平台推出物业管理法律培训服务，您如果有兴趣成为培训讲师，就请填写下列信息，进行申请吧！"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程名称"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginLeft="24px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:hint="请输入您要申报的名称"
+        android:background="@mipmap/wenbenyubg"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px"
+        android:textColorHint="#999999"
+        android:textSize="32px"
+        android:id="@+id/jiangshishenqing_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程大纲"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="20px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:hint="请详细的描述您的课程大纲"
+        android:background="@mipmap/wenbenyubg"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px"
+        android:textColorHint="#999999"
+        android:textSize="32px"
+        android:id="@+id/jiangshishenqing_dagang"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传课件"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="20px"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:src="@mipmap/shangchuan"
+                    android:layout_marginLeft="24px"
+                    android:id="@+id/jiangshishenqing_shangchuan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="*上传课件文件类型PPT/PDF/图片/文本等格式"
+                    android:textSize="24px"
+                    android:layout_marginLeft="24px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="20px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:hint="您的姓名"
+        android:background="@mipmap/wenbenyubg"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px"
+        android:textColorHint="#999999"
+        android:textSize="32px"
+        android:id="@+id/jiangshishenqing_xname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号"
+        android:textSize="32px"
+        android:textColor="#39a7b6"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="20px"/>
+
+    <EditText
+        android:id="@+id/jiangshishenqing_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:hint="请输入手机号"
+        android:background="@mipmap/wenbenyubg"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="20px"
+        android:textColorHint="#999999"
+        android:textSize="32px"/>
+
+            <Button
+                android:id="@+id/jiangshishenqing_tijiao"
+                android:gravity="center"
+                android:textSize="32px"
+                android:layout_width="700px"
+                android:layout_height="70px"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:background="@mipmap/wode_denglu_anniu"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginTop="20px"
+                android:text="* 讲师服务，平台将提取三成的服务费用。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:text="*法律培训服务所需流程在线下解决（包含费用流动）"
+                android:layout_marginBottom="80px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        >
+
+        <ImageView
+            android:id="@+id/mytender_fanhui"
+            android:layout_width="95px"
+            android:layout_height="88px"
+            android:src="@mipmap/wode_zuo"
+            android:padding="17px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:text="我的竞标"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#333333"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#dddddd"/>
+
+    <RadioGroup
+        android:id="@+id/mytender_rg"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="已中标"
+            android:checked="false"
+            android:id="@+id/mytender_yijing"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="竞标中"
+            android:checked="false"
+            android:id="@+id/mytender_zhengzai"/>
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+        <RadioButton
+            android:textSize="32px"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="未中标"
+            android:checked="false"
+            android:id="@+id/mytender_meiyou"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#dddddd"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mytender_fragment"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

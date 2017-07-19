@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/make_recyc_touxiang"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:src="@mipmap/wode_denglu_logo"
+            android:layout_marginLeft="20px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43px"
+                android:orientation="horizontal"
+                android:layout_marginTop="15px">
+                <TextView
+                    android:textSize="32px"
+                    android:textColor="#222222"
+                    android:id="@+id/make_recyc_name"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="40px"
+                    android:text="用户姓名"
+                    android:gravity="center_vertical"
+                    />
+
+                <Button
+                    android:layout_width="150px"
+                    android:layout_height="40px"
+                    android:text="已见面"
+                    android:layout_marginRight="25px"
+                    android:background="@mipmap/toubiaoanniu"
+                    android:textColor="#ffffff"
+                    android:textSize="24px"
+                    android:id="@+id/make_recyc_jianmian"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <TextView
+                android:textSize="28px"
+                android:textColor="#5E5E5E"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:text="发布时间"
+                android:gravity="center_vertical"
+                android:id="@+id/make_recyc_time"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:textSize="32px"
+        android:textColor="#5E5E5E"
+        android:id="@+id/make_recyc_message"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:text="问题内容:"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="20px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式:"
+            android:textSize="28px"
+            android:textColor="#39a7b6"
+            android:id="@+id/make_recyc_lianxi"
+            android:layout_marginLeft="24px"/>
+
+    <TextView
+        android:layout_width="900px"
+        android:layout_height="2px"
+        android:background="#dddddd"
+        android:layout_marginTop="10px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
