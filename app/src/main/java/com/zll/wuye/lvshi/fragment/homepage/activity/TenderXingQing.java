@@ -33,7 +33,9 @@ import com.zll.wuye.lvshi.bean.TenderXqBean;
 import com.zll.wuye.lvshi.fragment.homepage.adapter.TuPianAdapter;
 import com.zll.wuye.lvshi.http.HttpOkGo;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -86,10 +88,10 @@ public class TenderXingQing extends AutoLayoutActivity{
         tender_xq_toubiao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String srjine = shuru.getText().toString().trim();
+                double srjine = Double.parseDouble(shuru.getText().toString().trim());
                 String xqfangan = tender_xq_fangan.getText().toString().trim();
-                if(srjine.length()<1){
-                    Toast.makeText(TenderXingQing.this,"请输入金额",Toast.LENGTH_SHORT).show();
+                if(srjine<=body.getEarnest()){
+                    Toast.makeText(TenderXingQing.this,"委托竞标价格不能小于委托保证金!",Toast.LENGTH_SHORT).show();
                 }else if(xqfangan.length()<1){
                     Toast.makeText(TenderXingQing.this,"请输入方案",Toast.LENGTH_SHORT).show();
                 }else{
@@ -149,12 +151,13 @@ public class TenderXingQing extends AutoLayoutActivity{
                         .crossFade(1000)
                         .into(tender_xq_touxiang);
                 tender_xq_name.setText(body.getUser().getName());
-                tender_xq_time.setText("发布时间:"+body.getCreatTm());
+                String time = getStrTime(body.getCreatTm() + "");
+                tender_xq_time.setText("发布时间:"+time);
                 tender_xq_message.setText("发布内容:"+body.getCntn());
                 tender_xq_diqu.setText(body.getAddress());
                 tender_xq_leixing.setText("案例类型:"+body.getTypeName());
                 tender_xq_baojia.setText("委托报价: ￥"+body.getOfferStrt()+"-"+body.getOfferEnd());
-                tender_xq_baozhengjin.setText("委托保证金: ￥50");
+                tender_xq_baozhengjin.setText("委托保证金: ￥"+body.getEarnest());
                 if(body.getFileUrls().length()>0){
                     String urls = body.getFileUrls();
                     split = urls.split("[,]");
@@ -179,5 +182,13 @@ public class TenderXingQing extends AutoLayoutActivity{
         tender_xq_toubiao = (Button) findViewById(R.id.tender_xq_toubiao);
         shuru = (EditText) findViewById(R.id.tender_xq_shuru);
         fanhui = (ImageView) findViewById(R.id.jingbiaoxiangqing_fanhui);
+    }
+
+    public static String getStrTime(String timeStamp){
+        String timeString = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH:mm");
+        long  l = Long.valueOf(timeStamp);
+        timeString = sdf.format(new Date(l));//单位秒
+        return timeString;
     }
 }
