@@ -86,6 +86,14 @@ public class Loginzhuce extends AutoLayoutActivity implements Datademand.CallDat
                     Toast.makeText(Loginzhuce.this,"手机号格式不正确", Toast.LENGTH_SHORT).show();
                 }else{
                     mYanzhengma.setEnabled(false);
+                    OkGo.get("https://wuye.kylinlaw.com/validate/code?tel="+shoujihao+"&type=reg")//
+                            .tag(this)
+                            .execute(new StringCallback() {
+                                @Override
+                                public void onSuccess(String s, Call call, Response response) {
+
+                                }
+                            });
                     timer = new CountDownTimer(60 * 1000, 1000) {
                         @Override
                         public void onTick(long millisUntilFinished) {

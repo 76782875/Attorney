@@ -61,7 +61,9 @@
         <meta-data
             android:name="design_height"
             android:value="1334"/>
-
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
         <activity android:name=".fragment.mypage.regin.Loginzhuce"/>
         <activity android:name=".fragment.mypage.regin.WangjiMima"/>
         <activity android:name=".fragment.mypage.activity.PerSonMessage">
